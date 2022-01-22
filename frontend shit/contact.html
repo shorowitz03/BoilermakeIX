@@ -15,28 +15,19 @@
      <a id="tab3" href="information.html">About Us</a>
      <a id="tab4" class="active" href="contact.html">Contacts</a>
  </div>
-<div class="anyquestions">
+<div class="contact-title">
     <h1>Send us a message</h1>
 </div>
 
-<div class="bernardo">
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php"></form>
-    <label for="Name" class="fcf-label">Your name</label>
-    <div class="fcf-input-group">
-        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-    </div>
-    <div class="fcf-form-group">
-    <label for="Email" class="fcf-label">Your email address</label>
-    <div class="fcf-input-group">
-        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-    </div>
-    <div class="fcf-form-group">
-    <label for="Message" class="fcf-label">Your message</label>
-    <div class="fcf-input-group">
-        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-    </div>
-    </div>
-    <div class="fcf-form-group">
-    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-    </div>
-</div>
+<div class="samuel" >
+<div class="contact-form">
+    <form id="contact-form" method="post" action="contact.php">
+        <input name="name" type="text" class="form-control" placeholder="Your Name" required?>
+        <br><input name="email" type="email" class="form-control" placeholder="Your Email" required?></br>
+
+        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+    
+    </form>
+</div></div>
+
