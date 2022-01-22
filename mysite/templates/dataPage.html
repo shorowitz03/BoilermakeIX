@@ -7,23 +7,11 @@
 </head>
 <body>
     <h2>Your username is:</span> {{user}}</h2>
-    <h1>Your data is : {{id}}</h1>
 
-    <br>
-    <div class="container w-50">
-        <div class="card bg-light text-dark">
-            <h5 class="card-header bg-dark text-light">User Info</h5>
-            <div class="card-body">
-                <div class="card-text"><b>User Email:</b> {{user.email}}</div>
-                <div class="card-text"><b>Last Login:</b> {{user.last_login}}</div>
-            </div>
-        </div>
-    </div>
 
-    <br>
     <div class="container w-50">
 
-        <form action="success" method="POST">
+        <form action="success/" method="POST">
             {% csrf_token %}
             <div class="form-group">
                 <label for="first_name">First Name</label>
@@ -35,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter Your Email">
+                <input type="text" class="form-control" id="email" placeholder="Enter Your Email" name = 'email'>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

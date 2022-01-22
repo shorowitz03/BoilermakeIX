@@ -1,5 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+import cgi, cgitb
+
+form = cgi.FieldStorage()
 
 # {{ variable }} The value of a variable is displayed when the variable name 
 # is used inside of double curly braces. This is a form of interpolation.
@@ -10,39 +13,41 @@ from django.shortcuts import render
 
 # Each function is a page that must be called in urls.py with 
 # views.name with "modifier/"
-def home(request):
-    return render(request, 'homePage.html') # Third variable can be 
+
+#BALLZ
+def index(request):
+   return render(request, 'index.html') # Third variable can be 
+
+# def trends(request):
+#     return render(request, 'trends.html')
+
+# def informatonal(request):
+#     return render(request, 'opener.html')
+
+# def contact(request):
+#     return render(request, 'contact.html')
+
+# def panel(request):
+#     return render(request, 'panel.html')
+
+
+
+# Shit
 
 
 def about(request):
     return render(request, 'about.html')
 
+    
 
 def viewpara(request, id):
-    return render(request, 'dataPage.html', {'id' : id})
-
     current_user = request.user.get_username()
-    user_email = {'email' : request.user.email}
-    print(user_email)
-    last_login = {'last_login': request.user.last_login}
-    return render(request, 'index.html',{'user':user_email})
-
-email = 'fuck'
-def ask(request, data):
-    global email
-    if request.method=='POST':
-       first_name = request.POST.get("first_name")
-       last_name = request.POST.get("last_name")
-       email = request.POST.get("email")
-       email.save()
-       data = Users(first_name,last_name,age)
-       data.save()
-
-    else:
-        email = 'fail'
-
-    return render(request, 'index.html', {})
+    return render(request, 'dataPage.html',{'user': current_user})
+    
 
 def success(request):
-    return render(request, 'success.html')
+    data = form.getvalue('email')
+    print(data)
+    return render(request, 'success.html', {'data' : data})
+
 
