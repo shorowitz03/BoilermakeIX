@@ -44,6 +44,5 @@ def ask(request, data):
     return render(request, 'index.html', {})
 
 def success(request):
-    print(email)
     return render(request, 'success.html')
 
