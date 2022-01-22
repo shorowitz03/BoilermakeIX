@@ -1,5 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+import cgi, cgitb
+
+form = cgi.FieldStorage()
 
 # {{ variable }} The value of a variable is displayed when the variable name 
 # is used inside of double curly braces. This is a form of interpolation.
@@ -35,15 +38,16 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
+    
 
 def viewpara(request, id):
-    return render(request, 'dataPage.html', {'id' : id})
-    user_email = {'email' : request.user.email}
-    return render(request, 'index.html',{'user':user_email})
-
+    current_user = request.user.get_username()
+    return render(request, 'dataPage.html',{'user': current_user})
+    
 
 def success(request):
-    data = request.GET['email']
+    data = form.getvalue('email')
+    print(data)
     return render(request, 'success.html', {'data' : data})
 
 
