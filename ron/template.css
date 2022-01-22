@@ -26,15 +26,12 @@
     display: table;
 }
 
-.column {
-    display: flex;
-}
-
 .logo {
     width: 100px;
     height: 100px;
     padding: 15px;
-    background-color: gray;
+    margin: 15px;
+    border: 2px solid black;
     text-align: center;
     font-family: Georgia;
 }
@@ -47,4 +44,5 @@
 .content {
     font-family: sans-serif;
     font-size: 12px;
+    justify-content: right;
 }
