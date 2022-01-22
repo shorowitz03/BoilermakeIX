@@ -1,16 +1,14 @@
 .backgroundImg {
-    background-image: url("green_background.png");
-    min-height: 800px;
+    min-height: 500px;
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: black;
 }
 
-h1 {
-    color: #2049b8;
-    font-size: 32px;
-    font: Helvetica;
+video {
+    min-height: 500px;
+    width: 100%;
 }
 
 .navbarDiv {
@@ -27,6 +25,10 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     border: 2px outset rgb(32, 32, 32);
+}
+
+.navbarDiv li:hover {
+    background-color: rgb(107, 216, 121);
 }
 
 .row {
