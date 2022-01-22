@@ -32,7 +32,6 @@ def index(request):
 
 
 
-# Shit
 
 
 def about(request):
@@ -54,4 +53,4 @@ def success(request):
     return render(request, 'success.html', {'email' : email, 'phone_number' : phone_number})
 
 def images(request):
-    return render(request, 'index.html')
+    return render(request, 'testHtmlImage.html')
