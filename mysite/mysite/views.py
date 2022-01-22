@@ -20,3 +20,30 @@ def about(request):
 
 def viewpara(request, id):
     return render(request, 'dataPage.html', {'id' : id})
+
+    current_user = request.user.get_username()
+    user_email = {'email' : request.user.email}
+    print(user_email)
+    last_login = {'last_login': request.user.last_login}
+    return render(request, 'index.html',{'user':user_email})
+
+email = 'fuck'
+def ask(request, data):
+    global email
+    if request.method=='POST':
+       first_name = request.POST.get("first_name")
+       last_name = request.POST.get("last_name")
+       email = request.POST.get("email")
+       email.save()
+       data = Users(first_name,last_name,age)
+       data.save()
+
+    else:
+        email = 'fail'
+
+    return render(request, 'index.html', {})
+
+def success(request):
+    print(email)
+    return render(request, 'success.html')
+
