@@ -12,5 +12,6 @@ Making a virtual envieroment:
     $set-executionpolicy restricted
 
 
-  
+Downloading stock information:
+    https://www.nasdaq.com/market-activity/stocks/screener
 
