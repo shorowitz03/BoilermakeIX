@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contact_us.css">
+    </HEAD>
+<body>
+ <div class="backgroundImg">
+     <h1 style="font-size: 150px; text-align:center; font-family:sans-serif; color:white">Contact Us</h1>
+ </div>
+ <div class="navbarDiv">
+     <a id="tab1" href="index.html">Home</a>
+     <a id="tab2" href="trends.html">Market Trends</a>
+     <a id="tab3" href="information.html">About Us</a>
+     <a id="tab4" class="active" href="contact.html">Contacts</a>
+ </div>
+<div class="anyquestions">
+    <h1>Send us a message</h1>
+</div>
+
+<div class="bernardo">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php"></form>
+    <label for="Name" class="fcf-label">Your name</label>
+    <div class="fcf-input-group">
+        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+    </div>
+    <div class="fcf-form-group">
+    <label for="Email" class="fcf-label">Your email address</label>
+    <div class="fcf-input-group">
+        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+    </div>
+    <div class="fcf-form-group">
+    <label for="Message" class="fcf-label">Your message</label>
+    <div class="fcf-input-group">
+        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+    </div>
+    </div>
+    <div class="fcf-form-group">
+    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+    </div>
+</div>

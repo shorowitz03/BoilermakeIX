@@ -1,0 +1,48 @@
+.header {
+    height: 100px;
+    text-align: left;
+    background-color: rgb(107, 216, 121);
+}
+
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.insignia {
+    width: 20%;
+    float: left;
+}
+
+.navBar {
+    width: 80%;
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: Georgia;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.content {
+    font-family: sans-serif;
+    font-size: 12px;
+    justify-content: right;
+}
