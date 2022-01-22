@@ -38,16 +38,15 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
-    
-
-def viewpara(request, id):
+def viewpara(request):
     current_user = request.user.get_username()
     return render(request, 'dataPage.html',{'user': current_user})
-    
 
 def success(request):
-    data = form.getvalue('email')
-    print(data)
-    return render(request, 'success.html', {'data' : data})
+    phone_number = request.GET.get('phone_number')
+    email = request.GET.get('email')
+    first_name = request.GET.get('first_name')
+    last_name  = request.GET.get('last_name')
+    return render(request, 'success.html', {'email' : email})
 
 

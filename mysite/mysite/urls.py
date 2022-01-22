@@ -21,7 +21,7 @@ urlpatterns = [
     path('', views.index),
     path('admin/', admin.site.urls),
     path('about/', views.about),
-    path('products/<slug:id>', views.viewpara, name = 'view_products'),
+    path('products/', views.viewpara, name = 'view_products'),
     path('products/success/', views.success),
 
     # Set bar pages BALLZ
