@@ -52,5 +52,3 @@ def success(request):
     last_name  = request.GET.get('last_name')
     return render(request, 'success.html', {'email' : email, 'phone_number' : phone_number})
 
-def images(request):
-    return render(request, 'testHtmlImage.html')
