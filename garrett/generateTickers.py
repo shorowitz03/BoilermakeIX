@@ -11,7 +11,6 @@ for s in stocks:
     try:
         data = yf.download(tickers=s, period='2m', interval='1m', progress=False)
         file.write(s + ',')
-        print(data)
         print(s + ' added')
     except:
         print(s + ' not found')
