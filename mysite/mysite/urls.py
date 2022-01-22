@@ -18,10 +18,15 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.index),
     path('admin/', admin.site.urls),
     path('about/', views.about),
     path('products/<slug:id>', views.viewpara, name = 'view_products'),
     path('ask/', views.ask),
-    path('products/success', views.success),
+
+    # Set bar pages BALLZ
+    # path('trends.html', views.trends),
+    # path('informational.html', views.informational),
+    # path('contact.html', views.contact),
+    # path('panel.html', views.opener),
 ]
