@@ -101,14 +101,18 @@ video {
     width: 50px;
     text-align: justify;
     text-justify: inter-word;   
+<<<<<<< HEAD
 }
 
 body{
-    margin: 0;
+    margin: 25;
     padding: 0;
     text-align: center;
     background-color: white;
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
+=======
+    margin-top: 25px;
+>>>>>>> 4ec636ef00332fae1cdeecb64ca4530457dd7133
 }
