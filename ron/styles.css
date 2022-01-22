@@ -1,7 +1,10 @@
-.headerDiv {
-    border: 5px outset black;
-    background-color: lightblue;
-    text-align: center;
+.backgroundImg {
+    background-image: url("green_background.png");
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -11,12 +14,29 @@ h1 {
 }
 
 .navbarDiv {
-    background-color: blanchedalmond;
-    border: 5px black;
+    background-image: linear-gradient(rgb(172, 166, 166),gray);
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbarDiv li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px outset rgb(32, 32, 32);
+}
+
+.row {
+    display: flex;
 }
 
 .column {
-    display: inline;
-    justify-content: space-between;
-    padding: 4%;
+    flex: 25%;
+    padding: 5px;
+    width: 25%;
+    margin: 5px;
+    align-content: center;
 }
