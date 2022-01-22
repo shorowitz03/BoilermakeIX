@@ -43,3 +43,20 @@
     background-color:rgb(107, 216, 121);
     color: white;
 }
+
+.anyquestions {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.wow {
+    text-align: center;
+    font-size: 10px;
+}
+
+.bernardo {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin-left: 590px;
+}
