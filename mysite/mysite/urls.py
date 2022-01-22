@@ -23,6 +23,7 @@ urlpatterns = [
     path('about/', views.about),
     path('products/', views.viewpara, name = 'view_products'),
     path('products/success/', views.success),
+    path('images/', views.images),
 
     # Set bar pages BALLZ
     # path('trends.html', views.trends),
