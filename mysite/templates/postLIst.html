@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "./__base.html." %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Picture Page</title>
+    <h1>Picture Page!</h1>
+</head>
+
+<body>
+
+    {% for image in ron %}
+        <div class="card mb-4" style="width: 40rem">
+            <img src = "{% static 'ron/' | add:post.slug|add: '.jpeg' %}" class = "card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">{{ post.title }}</h3>
+                <h6 class="card-subtitle mb-2 text-muted">{{ post.slug }}</h6>
+                <p class="card-text">{{ post.snippet }}...</p>
+            </div>
+        </div>
+    {% endfor %}
+
+    {% for hotel in hotel_images %}
+            <div class="col-md-4">
+                    {{ hotel.name }}
+                     <img src="{{ron/fixed_image_background.jpg}}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+            </div>
+    {% endfor %}
+    
+    
+</body>
