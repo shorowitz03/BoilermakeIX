@@ -46,6 +46,27 @@ video {
     color: white;
 }
 
+.exclaim {
+    text-align: center;
+    text-shadow: 20px rgb(20, 20, 20);
+}
+
+.exclaim h1 {
+    font-family: Verdana;
+    font-size: 100px;
+    color: maroon;
+}
+
+.proclaim {
+    text-align: center;
+}
+
+.proclaim h1 {
+    font-family: verdana;
+    font-size: 70px;
+    color: darkslateblue;
+}
+
 .row {
     display: flex;
 }
@@ -54,6 +75,6 @@ video {
     flex: 25%;
     padding: 5px;
     width: 25%;
-    margin: 5px;
+    margin: 67px;
     align-content: center;
 }
