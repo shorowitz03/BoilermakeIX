@@ -1,9 +1,9 @@
 import smtplib
 
 sender_email = "fluxcache@gmail.com"
-receiver_email = "bernardospam1@yahoo.com"
-password = input("Enter a password: ")
-message = "This is a virus!!!"
+receiver_email = input("Enter email to send to: ")
+password = "bernardogarrettmikeyronsam"
+message = "This is a free car!!!"
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
