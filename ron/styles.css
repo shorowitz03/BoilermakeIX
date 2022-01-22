@@ -12,23 +12,37 @@ video {
 }
 
 .navbarDiv {
-    background-image: linear-gradient(rgb(172, 166, 166),gray);
+    background-image: linear-gradient(rgb(56, 56, 56),rgb(20, 20, 20));
+    overflow: hidden;
+}
+
+.navbarDiv a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.navbarDiv li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 2px outset rgb(32, 32, 32);
+#tab1 {
+    margin-left: 37%;
+    left: 0%;
+    position: relative;
 }
 
-.navbarDiv li:hover {
+#tab4 {
+    margin-right: 25%;
+}
+
+.navbarDiv a:hover {
     background-color: rgb(107, 216, 121);
+    color: black;
+}
+
+.navbarDiv a.active {
+    background-color:rgb(107, 216, 121);
+    color: white;
 }
 
 .row {
