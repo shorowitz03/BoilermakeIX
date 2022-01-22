@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+
 .backgroundImg {
     min-height: 500px;
     background-attachment: fixed;
@@ -14,6 +20,7 @@ video {
 .navbarDiv {
     background-image: linear-gradient(rgb(56, 56, 56),rgb(20, 20, 20));
     overflow: hidden;
+
 }
 
 .navbarDiv a {
@@ -27,7 +34,7 @@ video {
 }
 
 #tab1 {
-    margin-left: 37%;
+    margin-left: 25%;
     left: 0%;
     position: relative;
 }
@@ -78,5 +85,41 @@ video {
     width: 25%;
     margin-left: 33px;
     margin-right: 33px;
+    margin-bottom: 33px;
     align-content: center;
+}
+
+.footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    height: 100px;
+    text-align: left;
+    background-color: rgb(107, 216, 121);
+}
+.insignia {
+    float: left;
+}
+.address {
+    display: inline-block;
+    width: 50px;
+    text-align: justify;
+    text-justify: inter-word;   
+<<<<<<< HEAD
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+=======
+    margin-top: 0px;
+>>>>>>> 4ec636ef00332fae1cdeecb64ca4530457dd7133
 }

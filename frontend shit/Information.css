@@ -43,3 +43,13 @@
     background-color:rgb(107, 216, 121);
     color: white;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
