@@ -1,5 +1,22 @@
+.headerDiv {
+    border: 5px outset black;
+    background-color: lightblue;
+    text-align: center;
+}
+
 h1 {
     color: #2049b8;
     font-size: 32px;
     font: Helvetica;
+}
+
+.navbarDiv {
+    background-color: blanchedalmond;
+    border: 5px black;
+}
+
+.column {
+    display: inline;
+    justify-content: space-between;
+    padding: 4%;
 }
