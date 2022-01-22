@@ -23,5 +23,5 @@ urlpatterns = [
     path('about/', views.about),
     path('products/<slug:id>', views.viewpara, name = 'view_products'),
     path('ask/', views.ask),
-    path('products/success/', views.success),
+    path('products/success', views.success),
 ]
