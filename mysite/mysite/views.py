@@ -50,4 +50,4 @@ def success(request):
     return render(request, 'success.html', {'email' : email, 'phone_number' : phone_number})
 
 def images(request):
-    return render(request, 'postLIst.html')
+    return render(request, 'testFile.html')

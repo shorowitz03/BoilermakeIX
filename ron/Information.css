@@ -1,4 +1,6 @@
 .backgroundImg {
+    background-image: url("new\ green\ 2.jpg");
+    background-position: center;
     max-height: 500px;
     background-attachment: fixed;
     background-size: cover;
@@ -16,6 +18,7 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
+    font-family: sans-serif;
     font-size: 17px;
     padding: 14px 16px;
     text-decoration: none;
