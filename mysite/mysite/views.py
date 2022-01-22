@@ -42,12 +42,16 @@ def viewpara(request):
     current_user = request.user.get_username()
     return render(request, 'dataPage.html',{'user': current_user})
 
+email_list = []
+phone_list = []
 def success(request):
     phone_number = request.GET.get('phone_number')
+    phone_list.append(request.GET.get('phone_number'))
     email = request.GET.get('email')
+    email_list.append(request.GET.get('email'))
     first_name = request.GET.get('first_name')
     last_name  = request.GET.get('last_name')
     return render(request, 'success.html', {'email' : email, 'phone_number' : phone_number})
 
 def images(request):
-    return render(request, 'testFile.html')
+    return render(request, 'index.html')
