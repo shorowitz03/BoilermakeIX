@@ -105,7 +105,7 @@ video {
 }
 
 body{
-    margin: 25;
+    margin: 0;
     padding: 0;
     text-align: center;
     background-color: white;
@@ -113,6 +113,6 @@ body{
     background-position: center;
     font-family: sans-serif;
 =======
-    margin-top: 25px;
+    margin-top: 0px;
 >>>>>>> 4ec636ef00332fae1cdeecb64ca4530457dd7133
 }
