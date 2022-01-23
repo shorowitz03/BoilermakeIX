@@ -24,12 +24,12 @@ test_df = stockData[int(n*0.9):]
 
 num_features = stockData.shape[1]
 
-# train_mean = train_df.mean()
-# train_std = train_df.std()
+train_mean = train_df.mean()
+train_std = train_df.std()
 
-# train_df = (train_df - train_mean) / train_std
-# val_df = (val_df - train_mean) / train_std
-# test_df = (test_df - train_mean) / train_std
+train_df = (train_df - train_mean) / train_std
+val_df = (val_df - train_mean) / train_std
+test_df = (test_df - train_mean) / train_std
 
 class WindowGenerator():
     def __init__(self, input_width, label_width, shift,
