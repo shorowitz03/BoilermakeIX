@@ -23,7 +23,7 @@ carrier_list = []
 def contacts(request):
 
     # Get phone numbers
-    phone_list.append(request.GET.get('phone number'))
+    phone_list.append(request.GET.get('phone_number'))
 
     # Get carriers
     carrier_list.append(request.GET.get('carrier'))
@@ -60,10 +60,10 @@ def topStock5(request):
     return render(request, 'topStock5.html')
 
 def bottomStock1(request):
-    return render(request, 'bottomtopStock1.html')
+    return render(request, 'bottomStock1.html')
 
 def bottomStock2(request):
-    return render(request, 'botto,Stock2.html')
+    return render(request, 'bottomStock2.html')
 
 def bottomStock3(request):
     return render(request, 'bottomStock3.html')
