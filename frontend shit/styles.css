@@ -3,6 +3,17 @@
 }
 
 .col-1 {width: 8.33%;}
+.col-2 {width: 16.67%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.67%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.67%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.67%;}
+.col-12 {width: 100%;}
 
 .backgroundImg {
     min-height: 500px;
@@ -20,7 +31,9 @@ video {
 .navbarDiv {
     background-image: linear-gradient(rgb(56, 56, 56),rgb(20, 20, 20));
     overflow: hidden;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbarDiv a {
@@ -33,16 +46,6 @@ video {
     text-decoration: none;
 }
 
-#tab1 {
-    margin-left: 25%;
-    left: 0%;
-    position: relative;
-}
-
-#tab4 {
-    margin-right: 25%;
-}
-
 .navbarDiv a:hover {
     background-color: rgb(107, 216, 121);
     color: black;
@@ -51,6 +54,12 @@ video {
 .navbarDiv a.active {
     background-color:rgb(107, 216, 121);
     color: white;
+}
+
+.navbarDiv::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .exclaim {
