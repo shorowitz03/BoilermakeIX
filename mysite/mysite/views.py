@@ -18,6 +18,9 @@ form = cgi.FieldStorage()
 def index(request):
    return render(request, 'index.html') # Third variable can be 
 
+def tesla(request):
+    return render(request, 'template.html')
+
 # def trends(request):
 #     return render(request, 'trends.html')
 
@@ -51,3 +54,4 @@ def success(request):
     first_name = request.GET.get('first_name')
     last_name  = request.GET.get('last_name')
     return render(request, 'success.html', {'email' : email, 'phone_number' : phone_number})
+
