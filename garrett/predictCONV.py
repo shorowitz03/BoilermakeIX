@@ -1,8 +1,6 @@
-from turtle import st
 import IPython
 import IPython.display
 import yfinance as yf
-import pandas as pd
 import pandas as pd
 import numpy as np
 import mplcyberpunk

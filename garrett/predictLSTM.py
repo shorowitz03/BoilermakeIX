@@ -3,7 +3,6 @@ import IPython
 import IPython.display
 import yfinance as yf
 import pandas as pd
-import pandas as pd
 import numpy as np
 import mplcyberpunk
 import seaborn as sns
@@ -25,12 +24,12 @@ test_df = stockData[int(n*0.9):]
 
 num_features = stockData.shape[1]
 
-train_mean = train_df.mean()
-train_std = train_df.std()
+# train_mean = train_df.mean()
+# train_std = train_df.std()
 
-train_df = (train_df - train_mean) / train_std
-val_df = (val_df - train_mean) / train_std
-test_df = (test_df - train_mean) / train_std
+# train_df = (train_df - train_mean) / train_std
+# val_df = (val_df - train_mean) / train_std
+# test_df = (test_df - train_mean) / train_std
 
 class WindowGenerator():
     def __init__(self, input_width, label_width, shift,
@@ -218,10 +217,10 @@ wide_window = WindowGenerator(
     input_width=24, label_width=24, shift=1,
     label_columns=['Close'])
 
-wide_window.plot(baseline)
-plt.show()
+# wide_window.plot(baseline)
+# plt.show()
 
-MAX_EPOCHS = 20
+MAX_EPOCHS = 50
 
 CONV_WIDTH = 3
 conv_window = WindowGenerator(
@@ -242,6 +241,8 @@ history = compile_and_fit(lstm_model, wide_window)
 IPython.display.clear_output()
 val_performance['LSTM'] = lstm_model.evaluate(wide_window.val)
 performance['LSTM'] = lstm_model.evaluate(wide_window.test, verbose=0)
+
+
 
 wide_window.plot(lstm_model)
 plt.show()
