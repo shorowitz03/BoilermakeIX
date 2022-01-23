@@ -42,26 +42,9 @@
     display: table;
 }
 
-.exclaim {
-    text-align: center;
-    text-shadow: 20px rgb(20, 20, 20);
-}
-
-.exclaim h1 {
-    font-family: Verdana;
-    font-size: 70px;
-    color: rgb(0, 0, 0);
-    margin-top: 100px;
-}
-
-.proclaim {
-    text-align: center;
-}
-
-.proclaim h1 {
-    font-family: verdana;
-    font-size: 70px;
-    color: black;
+.table {
+    padding: 10%;
+    border: 2px solid black;
 }
 
 .footer::after {

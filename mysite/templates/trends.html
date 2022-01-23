@@ -4,7 +4,7 @@
     <head>
         <title>Market Trends</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/trends.css' %}"/> 
+        <link rel="stylesheet" type="text/css" href="{% static 'css/MarketTrends.css' %}"/> 
     </head>
     <body>
         <div class="backgroundImg" style='background-image: url("static/image/de_barros.jpg")'>
@@ -16,7 +16,7 @@
             <a id="tab3" href="/about_us.html">About FluxCache</a>
             <a id="tab4" href="/contact.html">Contact Us</a>
         </div>
-        <table>
+        <table class="table">
             <tr>
                 <th>Company</th>
                 <th>Ticker</th>
@@ -26,71 +26,83 @@
                 <th>Debt-to-Equity</th>
             </tr>
             <tr class="highest_earner">
-                <td>Moderna, Inc.</td> }}REPLACE}}
-                <th>MRNA</th>
+                <td href="bottomStock1.html" style="text-decoration: none;">Moderna, Inc.</td>
+                <th >MRNA</th>
                 <td>160.07</td>
                 <td>0.5968</td>
                 <td>0.38</td>
                 <td>5.758</td>
-                <td>Penn National Gaming, Inc.</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="bottomStock2.html" style="text-decoration: none;">Penn National Gaming, Inc.</td>
                 <th>PENN</th>
                 <td>40.92</td>
                 <td>0.07218</td>
                 <td>0.06</td>
                 <td>377.626</td>
-                <td>Twitter, Inc.</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="bottomStock3.html" style="text-decoration: none;">Twitter, Inc.</td>
                 <th>TWTR</th>
                 <td>34.82</td>
                 <td>-0.03771</td>
                 <td>2.91</td>
                 <td>75.98</td>
-                <td>Generac Holdings Inc.</td> }}REPLACE}}
+            </tr>
+                <td href="bottomStock4.html" style="text-decoration: none;">Generac Holdings Inc.</td>
                 <th>GNRC</th>
                 <td>271.16</td>
                 <td>0.15522</td>
                 <td>3.71</td>
                 <td>56.282</td>
-                <td>Paycom Software, Inc.</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="bottomStock5.html" style="text-decoration: none;">Paycom Software, Inc.</td>
                 <th>PAYC</th>
                 <td>310</td>
                 <td>0.17311001</td>
                 <td>2.8</td>
                 <td>12.27</td>
-                <td>Church & Dwight Co., Inc.</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="topStock1.html" style="text-decoration: none;">Church & Dwight Co., Inc.</td>
                 <th>CHD</th>
                 <td>103.4</td>
                 <td>0.16018</td>
                 <td>4.41</td>
                 <td>56.139</td>
-                <td>Vertex Pharmaceuticals Incorporated</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="topStock2.html" style="text-decoration: none;">Vertex Pharmaceuticals Incorporated</td>
                 <th>VRTX</th>
                 <td>228.08</td>
                 <td>0.30523002</td>
                 <td>1.71</td>
                 <td>9.2</td>
-                <td>QUALCOMM Incorporated</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="topStock3.html" style="text-decoration: none;">QUALCOMM Incorporated</td>
                 <th>QCOM</th>
                 <td>164.93</td>
                 <td>0.26941</td>
                 <td>0.61</td>
                 <td>163.809</td>
-                <td>Ford Motor Company</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="topStock4.html" style="text-decoration: none;">Ford Motor Company</td>
                 <th>F</th>
                 <td>20.65</td>
                 <td>0.021300001</td>
                 <td>0.14</td>
                 <td>397.431</td>
-                <td>Cerner Corporation</td> }}REPLACE}}
+            </tr>
+            <tr>
+                <td href="topStock5.html" style="text-decoration: none;">Cerner Corporation</td>
                 <th>CERN</th>
                 <td>91.7</td>
                 <td>0.0915</td>
                 <td>2.05</td>
                 <td>48.47</td>
-                <th>{TICKER}</th>
-                <td>{PRICE}</td>
-                <td>{P_MARG}</td>
-                <td>{PEG_RATIO}</td>
-                <td>{DTE}</td>
             </tr>
         </table>
         <div class="footer">
