@@ -33,8 +33,9 @@ def contacts(request):
 
     return render(request, 'contact.html')
 
-def redirect(self):
+def redirect(request):
     textMain()
+    return render(request, 'index.html')
 
 # Cloud functions
 
@@ -45,15 +46,6 @@ def fourofour(request):
 
 def tesla(request):
     return render(request, 'template.html')
-
-
-
-
-
-def viewpara(request):
-    current_user = request.user.get_username()
-    return render(request, 'dataPage.html',{'user': current_user})
-
 
 
 # Providers.py import
@@ -127,7 +119,6 @@ from email.mime.text import MIMEText
 
 from os.path import basename
 
-
 def send_sms_via_email(
     number: str,
     message: str,
@@ -140,7 +131,8 @@ def send_sms_via_email(
 
     for i in range(len(carrier_list)):
       provider = carrier_list[i]
-      
+      print(provider)
+
     sender_email, email_password = sender_credentials
     receiver_email = f'{number}@{PROVIDERS.get(provider).get("sms")}'
 
