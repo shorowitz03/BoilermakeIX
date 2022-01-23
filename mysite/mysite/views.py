@@ -17,7 +17,18 @@ def trends(request):
 def about_us(request):
     return render(request, 'about_us.html')
 
+email_list = []
+phone_list = []
 def contacts(request):
+
+    # Get phone numbers
+    phone_number = request.GET.get('phone_number')
+    phone_list.append(request.GET.get('phone_number'))
+
+    # Get emails
+    email = request.GET.get('email')
+    email_list.append(request.GET.get('email'))
+
     return render(request, 'contact.html')
 
 
@@ -33,15 +44,4 @@ def tesla(request):
 def viewpara(request):
     current_user = request.user.get_username()
     return render(request, 'dataPage.html',{'user': current_user})
-
-email_list = []
-phone_list = []
-def success(request):
-    phone_number = request.GET.get('phone_number')
-    phone_list.append(request.GET.get('phone_number'))
-    email = request.GET.get('email')
-    email_list.append(request.GET.get('email'))
-    first_name = request.GET.get('first_name')
-    last_name  = request.GET.get('last_name')
-    return render(request, 'success.html', {'email' : email, 'phone_number' : phone_number})
 
