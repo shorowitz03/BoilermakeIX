@@ -1,10 +1,10 @@
-{% load static %}
+~% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Market Trends</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/MarketTrends.css' %}"/> 
+        <link rel="stylesheet" type="text/css" href="~% static 'css/MarketTrends.css' %}"/> 
     </head>
     <body>
         <div class="backgroundImg" style='background-image: url("static/image/de_barros.jpg")'>
@@ -19,22 +19,24 @@
         <table>
             <tr>
                 <th>Company</th>
-                <th class="col-1">Value ($$$)</th>
-                <th>% Change</th>
+                <th>Ticker</th>
+                <th>Value ($$$)</th>
                 <th>P/E Ratio</th>
+                <th>Profit Margin</th>
                 <th>Debt-to-Equity</th>
             </tr>
             <tr class="highest_earner">
-                <td>Moderna</td>
-                <td class="col-1">140.75</td>
-                <td>-4.32</td>
-                <td>2.3</td>
-                <td>0.2</td>
+                <td>{NAME}</td> **REPLACE**
+                <th>{TICKER}</th>
+                <td>{PRICE}</td>
+                <td>{P_MARG}</td>
+                <td>{PEG_RATIO}</td>
+                <td>{DTE}</td>
             </tr>
         </table>
         <div class="footer">
             <div class="insignia">
-                <a id="return" href="Home"><img src="{% static 'image/FluxCache FINAL.png' %}" style="width: 100px;height: 100px"/></a>
+                <a id="return" href="Home"><img src="~% static 'image/FluxCache FINAL.png' %}" style="width: 100px;height: 100px"/></a>
             </div>
             <div class="address">
                 <h1 style="font-family: sans-serif; text-align: left; text-decoration: none; font-size: 16px;">FluxCache</h1>
