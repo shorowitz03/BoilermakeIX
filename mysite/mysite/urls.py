@@ -16,7 +16,7 @@ urlpatterns = [
     path('index.html/', views.index),
 
     # Set market trends paths
-    path('MarketTrends.html', views.trends),
+    path('trends.html', views.trends),
 
     # Contact Us paths
     path('contact.html', views.contacts),
