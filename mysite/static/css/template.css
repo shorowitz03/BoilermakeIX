@@ -1,5 +1,4 @@
 .backgroundImg {
-    background-image: url("{% static 'image/individual_header.jpq' %}");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
