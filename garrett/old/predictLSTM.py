@@ -242,7 +242,5 @@ IPython.display.clear_output()
 val_performance['LSTM'] = lstm_model.evaluate(wide_window.val)
 performance['LSTM'] = lstm_model.evaluate(wide_window.test, verbose=0)
 
-
-
 wide_window.plot(lstm_model)
 plt.show()
