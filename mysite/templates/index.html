@@ -1,14 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>FluxCache</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"> 
     </head>
     <body>
         <div class="backgroundImg">
             <video width="1600px" height="500px" autoplay muted>
-                <source src="FluxCache with sound.mp4" type="video/mp4">
+                <source src="{% static 'image/FluxCache with sound.mp4' %}" type="video/mp4">
             </video>
         </div>
         <div class="navbarDiv">
@@ -22,16 +23,16 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="template.html"><img src="tesla_logo.png" alt="tesla page" height="220px"/></a>
+                <a href="template.html"><img src="{% static 'image/tesla_logo.png' %}" alt="tesla page" height="220px"/></a>
             </div>
             <div class="column">
-                <img src="image-removebg-preview (2).png" alt="sample image" height="220px"/>
+                <img src="{% static 'image/image-removebg-preview (2).png' %}" alt="sample image" height="220px"/>
             </div>
             <div class="column">
-                <img src="FluxCache FINAL.png" alt="sample image" height="220px"/>
+                <img src="{% static 'image/FluxCache FINAL.png' %}" alt="sample image" height="220px"/>
             </div>
             <div class="column">
-                <img src="FluxCache FINAL.png" alt="sample image" height="220px"/>
+                <img src="{% static 'image/FluxCache FINAL.png' %}" alt="sample image" height="220px"/>
             </div>
         </div>
         <div class="proclaim">
@@ -39,16 +40,16 @@
         </div>
         <div class="row">
             <div class="column">
-                <a href="template.html"><img src="FluxCache FINAL.png" alt="sample image" height="220px"/></a>
+                <a href="template.html"><img src="{% static 'image/FluxCache FINAL.png' %}" alt="sample image" height="220px"/></a>
             </div>
             <div class="column">
-                <img src="FluxCache FINAL.png" alt="sample image" height="220px"/>
+                <img src="{% static 'image/FluxCache FINAL.png' %}" alt="sample image" height="220px"/>
             </div>
             <div class="column">
-                <img src="FluxCache FINAL.png" alt="sample image" height="220px"/>
+                <img src="{% static 'image/FluxCache FINAL.png' %}" alt="sample image" height="220px"/>
             </div>
             <div class="column">
-                <img src="FluxCache FINAL.png" alt="sample image" height="220px"/>
+                <img src="{% static 'image/FluxCache FINAL.png' %}" alt="sample image" height="220px"/>
             </div>
         </div>
     </body>

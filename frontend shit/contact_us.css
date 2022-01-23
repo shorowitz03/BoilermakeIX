@@ -111,6 +111,25 @@ cursor: pointer;
 }
 
 .samuel{
-margin-bottom: 250px;
+margin-bottom: 150px;
 
 }
+.footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    height: 100px;
+    text-align: left;
+    background-color: rgb(107, 216, 121);
+}
+.insignia {
+    float: left;
+}
+.address {
+    display: inline-block;
+    width: 50px;
+    text-align: justify;
+    text-justify: inter-word;   }

@@ -25,11 +25,10 @@ urlpatterns = [
     path('about/', views.about),
     path('products/', views.viewpara, name = 'view_products'),
     path('products/success/', views.success),
-    path('images/', views.images),
 
-    # Set bar pages BALLZ
+    # Set bar pages
     # path('trends.html', views.trends),
     # path('informational.html', views.informational),
     # path('contact.html', views.contact),
     # path('panel.html', views.opener),
-] 
+]
