@@ -36,7 +36,7 @@ if __name__ == '__main__':
     
     for i, ticker in enumerate(top):
         plt.clf()
-        sp_500_yf_df[ticker].plot()
+        sp_500_yf_df[ticker].plot(color='#6ad879')
         plt.legend()
         plt.title("Top #{i} Daily {span} Returns ({ticker})".format(i=i+1, span=span, ticker=ticker), fontsize=16)
         plt.ylabel('Cumulative Stock Returns', fontsize=14)
@@ -46,11 +46,11 @@ if __name__ == '__main__':
         plt.savefig('mysite\static\image\\topStock{i}.jpg'.format(i=i+1))
     for i, ticker in enumerate(bottom):
         plt.clf()
-        sp_500_yf_df[ticker].plot()
+        sp_500_yf_df[ticker].plot(color='#cd143c')
         plt.legend()
         plt.title("Bottom #{i} Daily {span} Returns ({ticker})".format(i=i+1, span=span, ticker=ticker), fontsize=16)
         plt.ylabel('Day Closing Value', fontsize=14)
         plt.xlabel('Date', fontsize=14)
 
-    plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
-    plt.savefig('mysite\static\image\\bottomStock{i}.jpg'.format(i=i+1))
+        plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
+        plt.savefig('mysite\static\image\\bottomStock{i}.jpg'.format(i=i+1))
