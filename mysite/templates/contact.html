@@ -11,7 +11,7 @@
      <h1 style="font-size: 150px; text-align:center; font-family:sans-serif; color:white">Contact Us</h1>
  </div>
  <div class="navbarDiv">
-     <a id="tab1" href="index.html">Home</a>
+     <a id="tab1" href="Home">Home</a>
      <a id="tab2" href="MarketTrends.html">Market Trends</a>
      <a id="tab3" href="about_us.html">About FluxCache</a>
      <a id="tab4" class="active" href="contact.html">Contact Us</a>
@@ -29,7 +29,28 @@
         <br><input name="email" type="email" class="form-control" placeholder="Your Email" required?></br>
 
         <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
-        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+       <div class="form-control"><a href="testFile.html" name="submission" type="submit">SEND MESSAGE</a></div>
+        <style>
+            .form-control {
+                display: inline-block;
+                color: #5a5757;
+                text-align: center;
+            }
+
+            .form-control a{
+                text-decoration: none;
+                font-family: sans-serif;
+                font-size: 17px;
+                padding: 5px 7px;
+                color: black;
+            }
+
+            .form-control a:hover {
+                background-color: rgb(107, 216, 121);
+                color: black;
+                padding: 5px 231px 2px 231px;
+            }
+        </style>
     
     </form>
 </div></div>

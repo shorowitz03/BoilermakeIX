@@ -1,4 +1,5 @@
 import email, smtplib, ssl
+from re import L
 from providers import PROVIDERS
 import time
 # used for MMS
@@ -9,9 +10,8 @@ from email.mime.text import MIMEText
 
 from os.path import basename
 
-global_number = input("Number: ")
-global_message = input("message: ") #Please send me your social security number for secruity reasons"
-global_provider = input("provider: ") #"Verizon"
+global email_list, phone_list, carrier_list
+
 
 def send_sms_via_email(
     number: str,
@@ -35,17 +35,12 @@ def send_sms_via_email(
 
 
 def main():
-    number = global_number
-    message = global_message
-    provider = global_provider
-
+    number = input("number: ")
+    provider = input("provider: ")
     sender_credentials = ("fluxcache@gmail.com", "bernardogarrettmikeyronsam")
-
-    # 
+    message = input("message: ")
     send_sms_via_email(number, message, provider, sender_credentials)
-    # MMS
-
-    print("Success!")\
+    print("Success!")
 
 
 if __name__ == "__main__":
