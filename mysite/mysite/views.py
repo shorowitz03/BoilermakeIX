@@ -12,7 +12,7 @@ def index(request):
    return render(request, 'index.html') # Third variable can be data
 
 def trends(request):
-    return render(request, 'MarketTrends.html')
+    return render(request, 'trends.html')
 
 def about_us(request):
     return render(request, 'about_us.html')
