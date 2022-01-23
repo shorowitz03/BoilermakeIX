@@ -28,8 +28,8 @@ urlpatterns = [
     path('template.html', views.tesla),
 
     # Set bar pages
-    # path('trends.html', views.trends),
+    path('MarketTrends.html', views.trends),
     # path('informational.html', views.informational),
-    # path('contact.html', views.contact),
+    path('contact.html', views.contacts),
     # path('panel.html', views.opener),
 ]
