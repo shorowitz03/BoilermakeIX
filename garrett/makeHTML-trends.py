@@ -8,13 +8,15 @@ style.use('dark_background')
 import matplotlib.pyplot as plt
 from makeGraphs import * 
 
+testDir =  'garrett\\trends.html'
+actualDir = 'mysite\\templates\\trends.html'
 fileLines = [x for x in open('garrett\\template-trends.html', 'r')]
 
 span = '3mo'
 top, bottom, sp_500_yf_df = getEnds(span)
 stonks = bottom + top
 
-with open('mysite\\templates\\trends.html', 'w') as f:
+with open(testDir, 'w') as f:
     for i, line in enumerate(fileLines):
         if '**REPLACE**' in line:
             fileLines[i].replace('**REPLACE**', '')
@@ -31,6 +33,6 @@ with open('mysite\\templates\\trends.html', 'w') as f:
         else:
             f.write(line)
         
-with open('mysite\\templates\\trends.html', 'r') as f: data = f.read().replace('~', '{').replace('*', '}')
-with open('mysite\\templates\\trends.html', 'w') as f: f.write(data)
+with open(testDir, 'r') as f: data = f.read().replace('~', '{').replace('*', '}')
+with open(testDir, 'w') as f: f.write(data)
 
