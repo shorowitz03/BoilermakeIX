@@ -1,0 +1,62 @@
+.backgroundImg {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.navbarDiv {
+    background-image: linear-gradient(rgb(56, 56, 56),rgb(20, 20, 20));
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarDiv a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbarDiv a:hover {
+    background-color: rgb(107, 216, 121);
+    color: black;
+}
+
+.navbarDiv a.active {
+    background-color:rgb(107, 216, 121);
+    color: white;
+}
+
+.navbarDiv::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.exclaim {
+    text-align: center;
+    text-shadow: 20px rgb(20, 20, 20);
+}
+
+.exclaim h1 {
+    font-family: Verdana;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+}
+
+.proclaim {
+    text-align: center;
+}
+
+.proclaim h1 {
+    font-family: verdana;
+    font-size: 70px;
+    color: black;
+}
