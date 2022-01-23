@@ -30,4 +30,10 @@ urlpatterns = [
 
      # Stock paths
     path('template.html/', views.tesla),
+
+    # Redirect path
+    path('redirect.html/', views.redirect),
+
+    #404 path for cloud
+    path('404.html/', views.fourofour),
 ]

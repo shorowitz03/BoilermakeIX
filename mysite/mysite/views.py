@@ -33,6 +33,13 @@ def contacts(request):
 
     return render(request, 'contact.html')
 
+def redirect(self):
+    textMain()
+
+# Cloud functions
+
+def fourofour(request):
+    return render (request, '404.html')
 
 # Stock functions
 
