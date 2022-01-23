@@ -12,7 +12,7 @@ from django.conf.urls.static import static
 urlpatterns = [
 
     # Home paths
-    path('', views.index),
+    path('Home', views.index),
     path('index.html/', views.index),
     path('index.html/template.html/', views.tesla),
 
