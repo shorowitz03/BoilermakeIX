@@ -15,7 +15,7 @@ top, bottom, sp_500_yf_df = getEnds(span)
 
 for i, ticker in enumerate(bottom):
     stock = yf.Ticker(ticker).info
-    path = 'mysite\static\image\\bottomStock{i}.jpg'.format(i=i+1)
+    path = 'image/bottomStock{i}.jpg'.format(i=i+1)
     with open('mysite\\templates\\bottomStock{i}.html'.format(i=i+1), 'w') as f:
         for line in fileLines:
             message = line.format(  IMG_PATH    = path,
@@ -31,7 +31,7 @@ for i, ticker in enumerate(bottom):
     
 for i, ticker in enumerate(top):
     stock = yf.Ticker(ticker).info
-    path = 'mysite\static\image\\topStock{i}.jpg'.format(i=i+1)
+    path = 'image/topStock{i}.jpg'.format(i=i+1)
     with open('mysite\\templates\\topStock{i}.html'.format(i=i+1), 'w') as f:
         for line in fileLines:
             message = line.format(  IMG_PATH    = path,
