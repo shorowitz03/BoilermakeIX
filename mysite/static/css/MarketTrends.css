@@ -1,5 +1,4 @@
 .backgroundImg {
-    background-image: url("de\ barros.jpg");
     background-position: center;
     max-height: 500px;
     background-attachment: fixed;
@@ -8,7 +7,7 @@
     background-color: black;
     padding: 66px;
 }
-}
+
 .navbarDiv {
     background-image: linear-gradient(rgb(56, 56, 56),rgb(20, 20, 20));
     overflow: hidden;
@@ -64,3 +63,23 @@
     font-size: 70px;
     color: black;
 }
+
+.footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    height: 100px;
+    text-align: left;
+    background-color: rgb(107, 216, 121);
+}
+.insignia {
+    float: left;
+}
+.address {
+    display: inline-block;
+    width: 50px;
+    text-align: justify;
+    text-justify: inter-word;   }
