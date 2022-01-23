@@ -16,10 +16,6 @@ urlpatterns = [
     path('index.html/', views.index),
     path('index.html/template.html/', views.tesla),
 
-    path('admin/', admin.site.urls),
-    path('products/', views.viewpara, name = 'view_products'),
-    path('products/success/', views.success),
-
     # Set market trends paths
     path('MarketTrends.html', views.trends),
     path('MarketTrends.html/template.html/', views.tesla),

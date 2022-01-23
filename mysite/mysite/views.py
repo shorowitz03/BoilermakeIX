@@ -19,15 +19,23 @@ def about_us(request):
 
 email_list = []
 phone_list = []
+carrier_list = []
 def contacts(request):
 
     # Get phone numbers
-    phone_number = request.GET.get('phone_number')
-    phone_list.append(request.GET.get('phone_number'))
+    phone_number = request.GET.get('phone number')
+    phone_list.append(request.GET.get('phone number'))
+    print(phone_list)
 
+    # Get carriers
+    carrier = request.GET.get('carrier')
+    carrier_list.append(request.GET.get('carrier'))
+    print(carrier_list)
+    
     # Get emails
     email = request.GET.get('email')
     email_list.append(request.GET.get('email'))
+    print(email_list)
 
     return render(request, 'contact.html')
 
