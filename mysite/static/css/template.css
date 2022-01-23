@@ -27,6 +27,7 @@
 }
 
 .logo {
+    float: left;
     width: 100px;
     height: 100px;
     padding: 15px;
@@ -37,6 +38,7 @@
 }
 
 .logo img {
+    float: right;
     width: 100px;
     height: 100px;
 }
