@@ -12,6 +12,7 @@ fileLines = open('garrett\\template.html', 'r').readlines()
 
 span = '3mo'
 top, bottom, sp_500_yf_df = getEnds(span)
+
 for i, ticker in enumerate(bottom):
     stock = yf.Ticker(ticker).info
     path = 'mysite\static\image\\bottomStock{i}.jpg'.format(i=i+1)
@@ -24,8 +25,12 @@ for i, ticker in enumerate(bottom):
                                     TICKER      = ticker,
                                     NAME        = stock['longName'])
             f.write(message)
+    with open('mysite\\templates\\bottomStock{i}.html'.format(i=i+1), 'r') as f: data = f.read().replace('~', '{').replace('*', '}')
+    with open('mysite\\templates\\bottomStock{i}.html'.format(i=i+1), 'w') as f: f.write(data)
+    
     
 for i, ticker in enumerate(top):
+    stock = yf.Ticker(ticker).info
     path = 'mysite\static\image\\topStock{i}.jpg'.format(i=i+1)
     with open('mysite\\templates\\topStock{i}.html'.format(i=i+1), 'w') as f:
         for line in fileLines:
@@ -36,13 +41,5 @@ for i, ticker in enumerate(top):
                                     TICKER      = ticker,
                                     NAME        = stock['longName'])
             f.write(message)
-
-
-# tkrList = 'TSLA'
-# data = yf.Ticker(tkrList)         #gets the data of the stock prices each day
-
-# print(type(data.info))
-# for k, i in data.info.items():
-#     print(k, i)
-
-# hist = data.history(period='3mo')
+    with open('mysite\\templates\\topStock{i}.html'.format(i=i+1), 'r') as f: data = f.read().replace('~', '{').replace('*', '}')
+    with open('mysite\\templates\\topStock{i}.html'.format(i=i+1), 'w') as f: f.write(data)

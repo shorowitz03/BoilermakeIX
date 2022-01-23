@@ -1,35 +1,36 @@
-~% load static %*
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Paycom Software, Inc. Stock - FluxCache</title>
+        <title>Generac Holdings Inc. Stock - FluxCache</title>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="~% static 'css/template.css' %*"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/template.css' %}"/>
     </head>
     <body>
         <div class="backgroundImg" style = 'background-image: url("/static/image/individual_header.jpg")'>
+            <h1 style="font-size: 100px; text-align:center; font-family:sans-serif; color:white">FluxCache-Generac Holdings Inc. Stock</h1>
         </div>
         <div class="navbarDiv">
-            <a id="tab1" href="Home">Home</a>
-            <a id="tab2" class="active" href="MarketTrends.html">Market Trends</a>
-            <a id="tab3" href="about_us.html">About Us</a>
-            <a id="tab4" href="contact.html">Contacts</a>
+            <a id="tab1" href="/Home">Home</a>
+            <a id="tab2" class="active" href="/MarketTrends.html">Market Trends</a>
+            <a id="tab3" href="/about_us.html">About Us</a>
+            <a id="tab4" href="/contact.html">Contacts</a>
         </div>
         <div class="clearfix">
             <div class="column logo">
-                <img src="~% static 'image/tesla_logo.png' %*" height="100px;"/>
+                <img src="{% static 'image/tesla_logo.png' %}" height="100px;"/>
             </div>
             <div class="column content">
-                <h2 style="color:rgb(43, 56, 48);"><strong>Paycom Software, Inc. <br> (PAYC-NASDAQ)</strong></h2>
-                <p style="color: rgb(19, 18, 18)">This stock is valued at 310. 
-                    Today, the stock had an opening of 327.29.<br>Paycom Software, Inc. provides cloud-based human capital management (HCM) solution delivered as software-as-a-service for small to mid-sized companies in the United States. It offers functionality and data analytics that businesses need to manage the employment life cycle from recruitment to retirement. The company's HCM solution provides a suite of applications in the areas of talent acquisition, including applicant tracking, candidate tracker, background checks, on-boarding, e-verify, and tax credit services; and time and labor management, such as time and attendance, scheduling/schedule exchange, time-off requests, labor allocation, labor management reports/push reporting, and geofencing/geotracking. Its HCM solution also offers payroll applications comprising payroll and tax management, Paycom pay, expense management, mileage tracker/fixed and variable rates, garnishment management, and GL concierge applications; and talent management applications that include employee self-service, compensation budgeting, performance management, and Paycom learning, course content, and subscriptions, as well as my analytics, which offer employment predictor reporting. In addition, the company's HCM solution provides HR management applications comprising manager on-the-go that gives supervisors and managers the ability to perform a variety of tasks, such as approving time-off requests and expense reimbursements; direct data exchange; ask here, a tool for direct line of communication to ask work-related questions; document and checklist; government and compliance; benefits administration/benefits to carrier; COBRA administration; personnel action forms; surveys; and affordable care act applications. Paycom Software, Inc. was founded in 1998 and is headquartered in Oklahoma City, Oklahoma.</p>
+                <h2 style="color:rgb(43, 56, 48);"><strong>Generac Holdings Inc. <br> (GNRC-NASDAQ)</strong></h2>
+                <p style="color: rgb(19, 18, 18)">This stock is valued at 271.16. 
+                    Today, the stock had an opening of 280.<br>Generac Holdings Inc. designs, manufactures, and sells power generation equipment, energy storage systems, and other power products for the residential, and light commercial and industrial markets worldwide. The company offers engines, alternators, transfer switches, and other components fueled by natural gas, liquid propane, gasoline, diesel, and bi-fuel; and batteries and inverters. It also provides residential automatic standby generators ranging in output from 7.5kW to 150kW; air-cooled engine residential standby generators ranging from 7.5kW to 24kW; liquid-cooled engine generators with outputs ranging from 22kW to 150kW; and Mobile Link, a remote monitoring system for home standby generators. In addition, the company offers various portable generators ranging in size from 800W to 17.5kW; engine driven power washers; water pumps; outdoor power equipment, such as trimmers and brush mowers, log splitters, lawn and leaf vacuums, and chipper shredders; and clean energy solution under the PWRcell and PWRview brands. Further, it provides light towers, mobile generators, and flameless heaters; light-commercial standby generators ranging from 22kW to 150kW and related transfer switches providing three-phase power for small and mid-sized businesses; and industrial generators ranging in output from 10kW up to 3,250kW used as emergency backup for healthcare, telecom, datacom, commercial office, retail, municipal, and manufacturing markets. Additionally, the company sells aftermarket service parts and product accessories to dealers. It distributes its products through independent residential dealers, industrial distributors and dealers, national and regional retailers, e-commerce partners, electrical, HVAC and solar wholesalers, catalogs, equipment rental companies and distributors, and solar installers; and directly to end users. Generac Holdings Inc. was founded in 1959 and is headquartered in Waukesha, Wisconsin.</p>
             </div>
         </div>
         <div class="graph_intro">
-            <h3>PAYC Through the Past Month</h3>
+            <h3>GNRC Through the Past Month</h3>
         </div>
         <div class="graph_border">
-            <img src="~% static 'mysite\static\image\bottomStock4.jpg' %*" height="520px;"/>
+            <img src="{% static 'mysite\static\image\bottomStock4.jpg' %}" height="520px;"/>
         </div>
     </body>
 </html>
