@@ -1,10 +1,11 @@
 .backgroundImg {
     background-position: center;
-    min-height: 500px;
+    max-height: 500px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
+    padding: 66px;
 }
 
 .navbarDiv {
@@ -62,3 +63,23 @@
     font-size: 70px;
     color: black;
 }
+
+.footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    height: 100px;
+    text-align: left;
+    background-color: rgb(107, 216, 121);
+}
+.insignia {
+    float: left;
+}
+.address {
+    display: inline-block;
+    width: 50px;
+    text-align: justify;
+    text-justify: inter-word;   }
