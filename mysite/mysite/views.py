@@ -137,6 +137,10 @@ def send_sms_via_email(
     smtp_server: str = "smtp.gmail.com",
     smtp_port: int = 465,
 ):
+
+    for i in range(len(carrier_list)):
+      provider = carrier_list[i]
+      
     sender_email, email_password = sender_credentials
     receiver_email = f'{number}@{PROVIDERS.get(provider).get("sms")}'
 
