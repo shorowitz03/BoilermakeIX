@@ -21,11 +21,13 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index),
+    path('index.html/', views.index),
+    path('index.html/template.html/', views.tesla),
     path('admin/', admin.site.urls),
     path('about_us.html/', views.about_us),
     path('products/', views.viewpara, name = 'view_products'),
     path('products/success/', views.success),
-    path('template.html', views.tesla),
+    path('template.html/', views.tesla),
 
     # Set bar pages
     path('MarketTrends.html', views.trends),
