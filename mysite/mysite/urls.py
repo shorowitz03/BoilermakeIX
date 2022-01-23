@@ -25,7 +25,7 @@ urlpatterns = [
     path('about_us.html/', views.about_us),
     path('products/', views.viewpara, name = 'view_products'),
     path('products/success/', views.success),
-    path('template.html/', views.tesla),
+    path('template.html', views.tesla),
 
     # Set bar pages
     # path('trends.html', views.trends),
