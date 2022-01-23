@@ -27,6 +27,7 @@ def contacts(request):
 
     # Get carriers
     carrier_list.append(request.GET.get('carrier'))
+    print(carrier_list)
 
     # Get emails
     email_list.append(request.GET.get('email'))
