@@ -21,14 +21,14 @@ def index(request):
 def tesla(request):
     return render(request, 'template.html')
 
-# def trends(request):
-#     return render(request, 'trends.html')
+def trends(request):
+    return render(request, 'MarketTrends.html')
 
 # def informatonal(request):
 #     return render(request, 'opener.html')
 
-# def contact(request):
-#     return render(request, 'contact.html')
+def contacts(request):
+    return render(request, 'contact.html')
 
 # def panel(request):
 #     return render(request, 'panel.html')
