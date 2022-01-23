@@ -34,8 +34,8 @@ def index(request):
 
 
 
-def about(request):
-    return render(request, 'about.html')
+def about_us(request):
+    return render(request, 'about_us.html')
 
 def viewpara(request):
     current_user = request.user.get_username()
@@ -51,4 +51,3 @@ def success(request):
     first_name = request.GET.get('first_name')
     last_name  = request.GET.get('last_name')
     return render(request, 'success.html', {'email' : email, 'phone_number' : phone_number})
-
