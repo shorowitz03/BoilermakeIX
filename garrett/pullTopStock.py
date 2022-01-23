@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import mplcyberpunk
 from matplotlib import style
-style.use('cyberpunk')
+style.use('dark_background')
 import matplotlib.pyplot as plt
 
 

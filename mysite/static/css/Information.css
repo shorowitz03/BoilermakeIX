@@ -1,12 +1,9 @@
 .backgroundImg {
-    background-image: url("new\ green\ 2.jpg");
     background-position: center;
-    max-height: 500px;
+    min-height: 500px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
-    padding: 66px;
 }
 
 .navbarDiv {
