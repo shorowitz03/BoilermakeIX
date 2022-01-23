@@ -44,8 +44,35 @@ def fourofour(request):
 
 # Stock functions
 
-def tesla(request):
-    return render(request, 'template.html')
+def topStock1(request):
+    return render(request, 'topStock1.html')
+
+def topStock2(request):
+    return render(request, 'topStock2.html')
+
+def topStock3(request):
+    return render(request, 'topStock3.html')
+
+def topStock4(request):
+    return render(request, 'topStock4.html')
+
+def topStock5(request):
+    return render(request, 'topStock5.html')
+
+def bottomStock1(request):
+    return render(request, 'bottomtopStock1.html')
+
+def bottomStock2(request):
+    return render(request, 'botto,Stock2.html')
+
+def bottomStock3(request):
+    return render(request, 'bottomStock3.html')
+
+def bottomStock4(request):
+    return render(request, 'bottomStock4.html')
+
+def bottomStock5(request):
+    return render(request, 'bottomStock5.html')
 
 
 # Providers.py import
