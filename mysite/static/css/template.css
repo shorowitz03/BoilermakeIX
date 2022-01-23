@@ -113,3 +113,10 @@
     border: 2px black dashed;
     margin: 0% 20% 5% 20%;
 }
+
+.graph_border img {
+    background-color: gray;
+    height: 520px;
+    width: 60%;
+    margin: 0% 20% 5% 20%;
+}
