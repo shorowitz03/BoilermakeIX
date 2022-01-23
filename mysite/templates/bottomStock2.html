@@ -1,23 +1,24 @@
-~% load static %*
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Penn National Gaming, Inc. Stock - FluxCache</title>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="~% static 'css/template.css' %*"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/template.css' %}"/>
     </head>
     <body>
         <div class="backgroundImg" style = 'background-image: url("/static/image/individual_header.jpg")'>
+            <h1 style="font-size: 100px; text-align:center; font-family:sans-serif; color:white">FluxCache-Penn National Gaming, Inc. Stock</h1>
         </div>
         <div class="navbarDiv">
-            <a id="tab1" href="Home">Home</a>
-            <a id="tab2" class="active" href="MarketTrends.html">Market Trends</a>
-            <a id="tab3" href="about_us.html">About Us</a>
-            <a id="tab4" href="contact.html">Contacts</a>
+            <a id="tab1" href="/Home">Home</a>
+            <a id="tab2" class="active" href="/MarketTrends.html">Market Trends</a>
+            <a id="tab3" href="/about_us.html">About Us</a>
+            <a id="tab4" href="/contact.html">Contacts</a>
         </div>
         <div class="clearfix">
             <div class="column logo">
-                <img src="~% static 'image/tesla_logo.png' %*" height="100px;"/>
+                <img src="{% static 'image/tesla_logo.png' %}" height="100px;"/>
             </div>
             <div class="column content">
                 <h2 style="color:rgb(43, 56, 48);"><strong>Penn National Gaming, Inc. <br> (PENN-NASDAQ)</strong></h2>
@@ -29,7 +30,7 @@
             <h3>PENN Through the Past Month</h3>
         </div>
         <div class="graph_border">
-            <img src="~% static 'mysite\static\image\bottomStock2.jpg' %*" height="520px;"/>
+            <img src="{% static 'image/bottomStock2.jpg' %}" height="520px;"/>
         </div>
     </body>
 </html>

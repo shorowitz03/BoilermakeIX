@@ -1,35 +1,36 @@
-~% load static %*
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Generac Holdings Inc. Stock - FluxCache</title>
+        <title>Ford Motor Company Stock - FluxCache</title>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="~% static 'css/template.css' %*"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/template.css' %}"/>
     </head>
     <body>
         <div class="backgroundImg" style = 'background-image: url("/static/image/individual_header.jpg")'>
+            <h1 style="font-size: 100px; text-align:center; font-family:sans-serif; color:white">FluxCache-Ford Motor Company Stock</h1>
         </div>
         <div class="navbarDiv">
-            <a id="tab1" href="Home">Home</a>
-            <a id="tab2" class="active" href="MarketTrends.html">Market Trends</a>
-            <a id="tab3" href="about_us.html">About Us</a>
-            <a id="tab4" href="contact.html">Contacts</a>
+            <a id="tab1" href="/Home">Home</a>
+            <a id="tab2" class="active" href="/MarketTrends.html">Market Trends</a>
+            <a id="tab3" href="/about_us.html">About Us</a>
+            <a id="tab4" href="/contact.html">Contacts</a>
         </div>
         <div class="clearfix">
             <div class="column logo">
-                <img src="~% static 'image/tesla_logo.png' %*" height="100px;"/>
+                <img src="{% static 'image/tesla_logo.png' %}" height="100px;"/>
             </div>
             <div class="column content">
-                <h2 style="color:rgb(43, 56, 48);"><strong>Generac Holdings Inc. <br> (CERN-NASDAQ)</strong></h2>
-                <p style="color: rgb(19, 18, 18)">This stock is valued at 271.16. 
-                    Today, the stock had an opening of 280.<br>Generac Holdings Inc. designs, manufactures, and sells power generation equipment, energy storage systems, and other power products for the residential, and light commercial and industrial markets worldwide. The company offers engines, alternators, transfer switches, and other components fueled by natural gas, liquid propane, gasoline, diesel, and bi-fuel; and batteries and inverters. It also provides residential automatic standby generators ranging in output from 7.5kW to 150kW; air-cooled engine residential standby generators ranging from 7.5kW to 24kW; liquid-cooled engine generators with outputs ranging from 22kW to 150kW; and Mobile Link, a remote monitoring system for home standby generators. In addition, the company offers various portable generators ranging in size from 800W to 17.5kW; engine driven power washers; water pumps; outdoor power equipment, such as trimmers and brush mowers, log splitters, lawn and leaf vacuums, and chipper shredders; and clean energy solution under the PWRcell and PWRview brands. Further, it provides light towers, mobile generators, and flameless heaters; light-commercial standby generators ranging from 22kW to 150kW and related transfer switches providing three-phase power for small and mid-sized businesses; and industrial generators ranging in output from 10kW up to 3,250kW used as emergency backup for healthcare, telecom, datacom, commercial office, retail, municipal, and manufacturing markets. Additionally, the company sells aftermarket service parts and product accessories to dealers. It distributes its products through independent residential dealers, industrial distributors and dealers, national and regional retailers, e-commerce partners, electrical, HVAC and solar wholesalers, catalogs, equipment rental companies and distributors, and solar installers; and directly to end users. Generac Holdings Inc. was founded in 1959 and is headquartered in Waukesha, Wisconsin.</p>
+                <h2 style="color:rgb(43, 56, 48);"><strong>Ford Motor Company <br> (F-NASDAQ)</strong></h2>
+                <p style="color: rgb(19, 18, 18)">This stock is valued at 20.65. 
+                    Today, the stock had an opening of 21.21.<br>Ford Motor Company designs, manufactures, markets, and services a range of Ford trucks, cars, sport utility vehicles, electrified vehicles, and Lincoln luxury vehicles worldwide. It operates through three segments: Automotive, Mobility, and Ford Credit. The Automotive segment sells Ford and Lincoln vehicles, service parts, and accessories through distributors and dealers, as well as through dealerships to commercial fleet customers, daily rental car companies, and governments. The Mobility segment designs and builds mobility services; and provides self-driving systems development services. The Ford Credit segment primarily engages in vehicle-related financing and leasing activities to and through automotive dealers. It provides retail installment sale contracts for new and used vehicles; and direct financing leases for new vehicles to retail and commercial customers, such as leasing companies, government entities, daily rental companies, and fleet customers. This segment also offers wholesale loans to dealers to finance the purchase of vehicle inventory; and loans to dealers to finance working capital and enhance dealership facilities, purchase dealership real estate, and other dealer vehicle programs. Ford Motor Company has a strategic collaboration with ARB Corporation Limited to develop a suite of aftermarket products for the new Ford Bronco. The company was founded in 1903 and is based in Dearborn, Michigan.</p>
             </div>
         </div>
         <div class="graph_intro">
-            <h3>CERN Through the Past Month</h3>
+            <h3>F Through the Past Month</h3>
         </div>
         <div class="graph_border">
-            <img src="~% static 'mysite\static\image\topStock4.jpg' %*" height="520px;"/>
+            <img src="{% static 'image/topStock4.jpg' %}" height="520px;"/>
         </div>
     </body>
 </html>
