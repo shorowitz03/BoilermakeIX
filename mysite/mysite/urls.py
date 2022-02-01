@@ -1,3 +1,5 @@
+# 
+
 """
 Use urls as paths (ends) and call functions in views.py
 accordingly.
@@ -14,26 +16,35 @@ urlpatterns = [
     # Home paths
     path('Home', views.index),
     path('index.html/', views.index),
-    path('index.html/template.html/', views.tesla),
 
     # Set market trends paths
-    path('MarketTrends.html', views.trends),
-    path('MarketTrends.html/template.html/', views.tesla),
+    path('trends.html', views.trends),
 
     # Contact Us paths
     path('contact.html', views.contacts),
-    path('contact.html/template.html/', views.tesla),
 
     # About us paths
     path('about_us.html/', views.about_us),
-    path('about_us.html/template.html/', views.tesla),
-
-     # Stock paths
-    path('template.html/', views.tesla),
 
     # Redirect path
     path('redirect.html/', views.redirect),
 
     #404 path for cloud
     path('404.html/', views.fourofour),
+
+     # Stock paths
+    path('topStock1.html/', views.topStock1),
+    path('topStock2.html/', views.topStock2),
+    path('topStock3.html/', views.topStock3),
+    path('topStock4.html/', views.topStock4),
+    path('topStock5.html/', views.topStock5),
+
+    path('bottomStock1.html/', views.bottomStock1),
+    path('bottomStock2.html/', views.bottomStock2),
+    path('bottomStock3.html/', views.bottomStock3),
+    path('bottomStock4.html/', views.bottomStock4),
+    path('bottomStock5.html/', views.bottomStock5),
+    
+
+    
 ]

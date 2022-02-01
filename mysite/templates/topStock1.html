@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teradyne, Inc. Stock - FluxCache</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/template.css' %}"/>
+    </head>
+    <body>
+        <div class="backgroundImg" style = 'background-image: url("/static/image/individual_header.jpg")'>
+            <h1 style="font-size: 100px; text-align:center; font-family:sans-serif; color:white">FluxCache-Teradyne, Inc. Stock</h1>
+        </div>
+        <div class="navbarDiv">
+            <a id="tab1" href="/Home">Home</a>
+            <a id="tab2" class="active" href="/trends.html">Market Trends</a>
+            <a id="tab3" href="/about_us.html">About Us</a>
+            <a id="tab4" href="/contact.html">Contacts</a>
+        </div>
+        <div class="clearfix">
+            <div class="column content">
+                <h2 style="color:rgb(43, 56, 48);"><strong>Teradyne, Inc. <br> (TER-NASDAQ)</strong></h2>
+                <p style="color: rgb(19, 18, 18)">This stock is valued at 143.39. 
+                    Today, the stock had an opening of 145.<br>Teradyne, Inc. designs, develops, manufactures, sells, and supports automatic test equipment worldwide. The company operates through Semiconductor Test, System Test, Industrial Automation, and Wireless Test segments. The Semiconductor Test segment offers products and services for wafer level and device package testing in automotive, industrial, communications, consumer, smartphones, computer and electronic game, and other applications. This segment also provides FLEX test platform systems; J750 test system to address the volume semiconductor devices; Magnum platform that tests memory devices, such as flash memory and DRAM; and ETS platform for semiconductor manufacturers, and assembly and test subcontractors in the analog/mixed signal markets. It serves integrated device manufacturers that integrate the fabrication of silicon wafers into their business; fabless companies that outsource the manufacturing of silicon wafers; foundries; and semiconductor assembly and test providers. The System Test segment offers defense/aerospace test instrumentation and systems; storage test systems; and circuit-board test and inspection systems. The Industrial Automation segment provides collaborative robotic arms, autonomous mobile robots, and advanced robotic control software for manufacturing, logistics, and light industrial customers. The Wireless Test segment provides test solutions for use in the development and manufacture of wireless devices and modules, smart phones, tablets, notebooks, laptops, peripherals, and Internet-of-Things devices under the LitePoint brand name. This segment also offers IQxel products for Wi-Fi and other standards; IQxstream solution for testing GSM, EDGE, CDMA2000, TD-SCDMA, WCDMA, HSPA+, LTE-FDD, TD_LTE, LTE-A, and 5G technologies; IQcell, a multi-device cellular signaling test solution; IQgig test solution; and turnkey test software for wireless chipsets. The company was incorporated in 1960 and is headquartered in North Reading, Massachusetts.</p>
+            </div>
+        </div>
+        <div class="graph_intro">
+            <h3>TER Through the Past Month</h3>
+        </div>
+        <div class="graph_border">
+            <img src="{% static 'image/topStock1.jpg' %}"/>
+        </div>
+    </body>
+</html>

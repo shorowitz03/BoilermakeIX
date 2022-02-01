@@ -1,5 +1,4 @@
 .backgroundImg {
-    background-image: url("de\ barros.jpg");
     background-position: center;
     max-height: 500px;
     background-attachment: fixed;
@@ -12,6 +11,9 @@
 .navbarDiv {
     background-image: linear-gradient(rgb(56, 56, 56),rgb(20, 20, 20));
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbarDiv a {
@@ -22,26 +24,6 @@
     font-size: 17px;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.navbarDiv a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 17px;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#tab1 {
-    margin-left: 37%;
-    left: 0%;
-    position: relative;
-}
-
-#tab4 {
-    margin-right: 25%;
 }
 
 .navbarDiv a:hover {
@@ -54,6 +36,11 @@
     color: white;
 }
 
+.navbarDiv::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 body{
 margin: 0;

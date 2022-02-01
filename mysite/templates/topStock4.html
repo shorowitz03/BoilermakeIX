@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ford Motor Company Stock - FluxCache</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/template.css' %}"/>
+    </head>
+    <body>
+        <div class="backgroundImg" style = 'background-image: url("/static/image/individual_header.jpg")'>
+            <h1 style="font-size: 100px; text-align:center; font-family:sans-serif; color:white">FluxCache-Ford Motor Company Stock</h1>
+        </div>
+        <div class="navbarDiv">
+            <a id="tab1" href="/Home">Home</a>
+            <a id="tab2" class="active" href="/trends.html">Market Trends</a>
+            <a id="tab3" href="/about_us.html">About Us</a>
+            <a id="tab4" href="/contact.html">Contacts</a>
+        </div>
+        <div class="clearfix">
+            <div class="column content">
+                <h2 style="color:rgb(43, 56, 48);"><strong>Ford Motor Company <br> (F-NASDAQ)</strong></h2>
+                <p style="color: rgb(19, 18, 18)">This stock is valued at 20.65. 
+                    Today, the stock had an opening of 21.21.<br>Ford Motor Company designs, manufactures, markets, and services a range of Ford trucks, cars, sport utility vehicles, electrified vehicles, and Lincoln luxury vehicles worldwide. It operates through three segments: Automotive, Mobility, and Ford Credit. The Automotive segment sells Ford and Lincoln vehicles, service parts, and accessories through distributors and dealers, as well as through dealerships to commercial fleet customers, daily rental car companies, and governments. The Mobility segment designs and builds mobility services; and provides self-driving systems development services. The Ford Credit segment primarily engages in vehicle-related financing and leasing activities to and through automotive dealers. It provides retail installment sale contracts for new and used vehicles; and direct financing leases for new vehicles to retail and commercial customers, such as leasing companies, government entities, daily rental companies, and fleet customers. This segment also offers wholesale loans to dealers to finance the purchase of vehicle inventory; and loans to dealers to finance working capital and enhance dealership facilities, purchase dealership real estate, and other dealer vehicle programs. Ford Motor Company has a strategic collaboration with ARB Corporation Limited to develop a suite of aftermarket products for the new Ford Bronco. The company was founded in 1903 and is based in Dearborn, Michigan.</p>
+            </div>
+        </div>
+        <div class="graph_intro">
+            <h3>F Through the Past Month</h3>
+        </div>
+        <div class="graph_border">
+            <img src="{% static 'image/topStock4.jpg' %}"/>
+        </div>
+    </body>
+</html>

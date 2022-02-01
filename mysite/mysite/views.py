@@ -12,7 +12,7 @@ def index(request):
    return render(request, 'index.html') # Third variable can be data
 
 def trends(request):
-    return render(request, 'MarketTrends.html')
+    return render(request, 'trends.html')
 
 def about_us(request):
     return render(request, 'about_us.html')
@@ -23,7 +23,7 @@ carrier_list = []
 def contacts(request):
 
     # Get phone numbers
-    phone_list.append(request.GET.get('phone number'))
+    phone_list.append(request.GET.get('phone_number'))
 
     # Get carriers
     carrier_list.append(request.GET.get('carrier'))
@@ -33,8 +33,9 @@ def contacts(request):
 
     return render(request, 'contact.html')
 
-def redirect(self):
+def redirect(request):
     textMain()
+    return render(request, 'index.html')
 
 # Cloud functions
 
@@ -43,17 +44,35 @@ def fourofour(request):
 
 # Stock functions
 
-def tesla(request):
-    return render(request, 'template.html')
+def topStock1(request):
+    return render(request, 'topStock1.html')
 
+def topStock2(request):
+    return render(request, 'topStock2.html')
 
+def topStock3(request):
+    return render(request, 'topStock3.html')
 
+def topStock4(request):
+    return render(request, 'topStock4.html')
 
+def topStock5(request):
+    return render(request, 'topStock5.html')
 
-def viewpara(request):
-    current_user = request.user.get_username()
-    return render(request, 'dataPage.html',{'user': current_user})
+def bottomStock1(request):
+    return render(request, 'bottomStock1.html')
 
+def bottomStock2(request):
+    return render(request, 'bottomStock2.html')
+
+def bottomStock3(request):
+    return render(request, 'bottomStock3.html')
+
+def bottomStock4(request):
+    return render(request, 'bottomStock4.html')
+
+def bottomStock5(request):
+    return render(request, 'bottomStock5.html')
 
 
 # Providers.py import
@@ -127,7 +146,6 @@ from email.mime.text import MIMEText
 
 from os.path import basename
 
-
 def send_sms_via_email(
     number: str,
     message: str,
@@ -140,7 +158,8 @@ def send_sms_via_email(
 
     for i in range(len(carrier_list)):
       provider = carrier_list[i]
-      
+      print(provider)
+
     sender_email, email_password = sender_credentials
     receiver_email = f'{number}@{PROVIDERS.get(provider).get("sms")}'
 

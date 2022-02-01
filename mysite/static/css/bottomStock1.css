@@ -59,8 +59,8 @@
 }
 
 .content h2 {
-    margin-top: 4%;
-    width: 40%;
+    margin-top: 6%;
+    width: 20%;
     font-family: Georgia;
     font-size: 20px;
     text-align: center;
@@ -68,8 +68,8 @@
 
 .content p {
     float: right;
-    width: 80%;
-    margin: 4% 5% 0% 5%;
+    width: 100%;
+    margin: 2% 0% 0% 5%;
     font-size: 16px;
     font-family: Helvetica;
 }
@@ -92,7 +92,7 @@
 }
 
 .graph_border {
-    height: 520px;
+    height: 720px;
     width: 60%;
     margin: 0% 20% 5% 20%;
 }

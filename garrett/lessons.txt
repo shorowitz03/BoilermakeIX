@@ -15,3 +15,7 @@ Making a virtual envieroment:
 Downloading stock information:
     https://www.nasdaq.com/market-activity/stocks/screener
 
+Running the website:
+  from the C:\Users\hurst\OneDrive\Documents\codes\hackathon\BoilermakeIX\mysite directory run
+  $python manage.py runserver --insecure
+
